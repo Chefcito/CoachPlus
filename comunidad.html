@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="comunidad.css">
+
+    <script type="text/javascript">
+        function changeImage(element, id) {
+            document.getElementById(id).src = element;
+        }
+
+    </script>
+</head>
+
+<body>
+    <img id="bg_image" src="resources/images/bg.png" alt="">
+
+    <div id="header" class="container-fluid">
+        <div class="row align-items-center">
+
+            <img id="main_logo" class="col-2" src="resources/images/logo.png" alt="">
+
+            <nav id="global_nav" class="col-10 justify-content-end">
+                <div class="container">
+                    <div class="row justify-content-end align-items-center">
+                        <ul id="global_nav_ul" class="row align-items-center">
+                            <li id="global_nav_li"><a href="actividad.html">ACTIVIDAD</a></li>
+                            <li id="global_nav_li"><a href="alimentacion.html">ALIMENTACIÓN</a></li>
+                            <li id="global_nav_li_selected">COMUNIDAD</li>
+                            <li id="global_nav_li"><a href="index.html">TÚ</a></li>
+                        </ul>
+
+                        <div id="profile">
+                            <img id="profile_image" src="resources/images/profile.png" alt="">
+
+                            <div id="profile_button_div" class="dropdown show">
+                                <button id="profile_button" class="btn" href="#" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img id="profile_button_img" src="resources/icons/down_arrow.png" alt="">
+                        </button>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profile_button_anchor">
+                                    <a class="dropdown-item" href="#">Mi cuenta</a>
+                                    <a class="dropdown-item" href="#">Privacidad</a>
+                                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </div>
+
+    <div id="main_container" class="container-fluid">
+        <div class="row justify-content-between">
+
+            <div id="local_nav_div" class="col-2">
+                <nav id="local_nav">
+                    <ul id="local_nav_ul">
+                        <li id="local_nav_li">MI PERFIL</li>
+                        <li id="local_nav_li_selected">POSTS</li>
+                        <li id="local_nav_li">EVENTOS</li>
+                        <li id="local_nav_li">CHAT</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="content" class="col-9">
+                <div id="content_header">
+                    <div class="container">
+                        <div class="row justify-content-end align-items-center">
+                            <div class="col-12">
+                                <h3 id="content_header_title">MI CLUB</h3>
+                            </div>
+
+                            <div id="content_header_tags" class="col-12">
+                                <div class="container">
+                                    <div class="row">
+                                        <div id="content_header_members_tag">
+                                            <div class="container">
+                                                <div class="row align-items-center">
+                                                    <img id="content_header_tag_img" src="resources/icons/members.png" alt="">
+                                                    <p id="content_header_tag_p">30 Miembros</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="content_header_date_tag">
+                                            <div class="container">
+                                                <div class="row align-items-center">
+                                                    <img id="content_header_tag_img" src="resources/icons/calendar.png" alt="">
+                                                    <p id="content_header_tag_p">30 Miembros</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="post_container" class="container">
+                    <div class="row">
+
+                        <div id="content_item" class="col-6">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/post_1.png" alt="">
+
+
+                                        <div id="content_item_btns">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_1');">
+                                                <img id="content_item_favorite_img_1" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+
+                                            <img id="content_item_share_img" class="item_favorite_img" src="resources/icons/share.png" alt="">
+                                        </div>
+
+
+                                        <div id="content_item_description">
+
+                                            <div id="content_item_tags" class="col-12">
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_user">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <img id="content_item_user_img" src="resources/images/profile_img_1.jpg" alt="">
+                                                                   
+                                                                    <p id="content_item_user_name">Manuel Giralt</p>
+
+                                                                    <p id="content_item_user_account">@GiraltM</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_text">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <p id="content_item_text_p">Preparandome cada día como el mejor del mundo.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_more_info">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <img id="content_item_more_info_place_img" src="resources/icons/map_pointer.png" alt="">
+                                                                    <p id="content_item_more_info_p">En Boditech, Chapinero, Bogota DC</p>
+
+                                                                    <p id="content_item_more_info_comments_p">20 Comentarios</p>
+                                                                    <img id="content_item_more_info_comments_arrow_img" src="resources/icons/down_arrow.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="content_item" class="col-6">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/post_2.png" alt="">
+
+
+                                        <div id="content_item_btns">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_2');">
+                                                <img id="content_item_favorite_img_2" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+
+                                            <img id="content_item_share_img" class="item_favorite_img" src="resources/icons/share.png" alt="">
+                                        </div>
+
+
+                                        <div id="content_item_description">
+
+                                            <div id="content_item_tags" class="col-12">
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_user">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <img id="content_item_user_img" src="resources/images/profile_img_2.png" alt="">
+                                                                   
+                                                                    <p id="content_item_user_name">Johana Gonzales</p>
+
+                                                                    <p id="content_item_user_account">@JoaGonzz</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_text">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <p id="content_item_text_p">Un excelente día acompañado con las mejores recetas que ofrece Coach+.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_more_info">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <img id="content_item_more_info_place_img" src="resources/icons/map_pointer.png" alt="">
+                                                                    <p id="content_item_more_info_p">Ciudad Jardin, Cali, Valle del Cauca</p>
+
+                                                                    <p id="content_item_more_info_comments_p">12  Comentarios</p>
+                                                                    <img id="content_item_more_info_comments_arrow_img" src="resources/icons/down_arrow.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="content_item" class="col-6">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/post_3.png" alt="">
+
+
+                                        <div id="content_item_btns">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_3');">
+                                                <img id="content_item_favorite_img_3" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+
+                                            <img id="content_item_share_img" class="item_favorite_img" src="resources/icons/share.png" alt="">
+                                        </div>
+
+
+                                        <div id="content_item_description">
+
+                                            <div id="content_item_tags" class="col-12">
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_user">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <img id="content_item_user_img" src="resources/images/profile_img_3.jpg" alt="">
+                                                                   
+                                                                    <p id="content_item_user_name">Yao Ming</p>
+
+                                                                    <p id="content_item_user_account">@YaoM</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_text">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <p id="content_item_text_p">Lo mejor de mi alimentación en manos de Coach+.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_more_info">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <img id="content_item_more_info_place_img" src="resources/icons/map_pointer.png" alt="">
+                                                                    <p id="content_item_more_info_p">Los Alamos, Cali, Valle del Cauca</p>
+
+                                                                    <p id="content_item_more_info_comments_p">14 Comentarios</p>
+                                                                    <img id="content_item_more_info_comments_arrow_img" src="resources/icons/down_arrow.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="content_item" class="col-6">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/post_4.png" alt="">
+
+
+                                        <div id="content_item_btns">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_4');">
+                                                <img id="content_item_favorite_img_4" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+
+                                            <img id="content_item_share_img" class="item_favorite_img" src="resources/icons/share.png" alt="">
+                                        </div>
+
+
+                                        <div id="content_item_description">
+
+                                            <div id="content_item_tags" class="col-12">
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_user">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <img id="content_item_user_img" src="resources/images/profile_img_4.jpg" alt="">
+                                                                   
+                                                                    <p id="content_item_user_name">Sofia Cardenas</p>
+
+                                                                    <p id="content_item_user_account">@SCardenas</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_text">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <p id="content_item_text_p">Las mejores recetas fáciles de hacer y en un sólo video.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <div id="content_item_more_info">
+                                                            <div class="container">
+                                                                <div class="row align-items-center">
+                                                                    <img id="content_item_more_info_place_img" src="resources/icons/map_pointer.png" alt="">
+                                                                    <p id="content_item_more_info_p">Chapinero, Bogota DC, Cundinamarca</p>
+
+                                                                    <p id="content_item_more_info_comments_p">16 Comentarios</p>
+                                                                    <img id="content_item_more_info_comments_arrow_img" src="resources/icons/down_arrow.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
