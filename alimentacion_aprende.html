@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acticvidad</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="alimentacion_aprende.css">
+
+    <script type="text/javascript">
+        function changeImage(element, id) {
+            document.getElementById(id).src = element;
+        }
+
+    </script>
+</head>
+
+<body>
+    <img id="bg_image" src="resources/images/bg_al.png" alt="">
+
+    <div id="header" class="container-fluid">
+        <div class="row align-items-center">
+
+            <img id="main_logo" class="col-2" src="resources/images/logo.png" alt="">
+
+            <nav id="global_nav" class="col-10 justify-content-end">
+                <div class="container">
+                    <div class="row justify-content-end align-items-center">
+                        <ul id="global_nav_ul" class="row align-items-center">
+                            <li id="global_nav_li"><a href="actividad.html">ACTIVIDAD</a></li>
+                            <li id="global_nav_li_selected">ALIMENTACIÓN</li>
+                            <li id="global_nav_li">COMUNIDAD</li>
+                            <li id="global_nav_li"><a href="index.html">TÚ</a></li>
+                        </ul>
+
+                        <div id="profile">
+                            <img id="profile_image" src="resources/images/profile.png" alt="">
+
+                            <div id="profile_button_div" class="dropdown show">
+                                <button id="profile_button" class="btn" href="#" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="profile_button_img" src="resources/icons/down_arrow.png" alt="">
+                                </button>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profile_button_anchor">
+                                    <a class="dropdown-item" href="#">Mi cuenta</a>
+                                    <a class="dropdown-item" href="#">Privacidad</a>
+                                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </div>
+
+    <div id="main_container" class="container-fluid">
+        <div class="row justify-content-between">
+
+            <div id="local_nav_div" class="col-2">
+                <nav id="local_nav">
+                    <ul id="local_nav_ul">
+                        <li id="local_nav_li_selected">APRENDE</li>
+                        <li id="local_nav_li">CREA RUTINAS</li>
+                        <li id="local_nav_li">PLANEA</li>
+                        <li id="local_nav_li">FAVORITOS</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="content" class="col-9">
+                <div id="content_header">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="container-fluid col-8">
+                                <div class="row align-items-center">
+                                    <img id="content_header_image" src="resources/icons/football.png" alt="">
+                                    <div id="content_header_description">
+                                        <p id="content_header_description_p">Estás en</p>
+                                        <h3 id="content_header_description_h3">FUTBOL</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="content_header_level" class="col-4">
+                                <h3 id="content_header_level_h3">MODO</h3>
+
+                                <div id="content_header_level_dropdown_menu" class="dropdown show">
+                                    <button id="content_header_level_btn" class="btn" href="#" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Todos<img id="content_header_level_btn_arrow" src="resources/icons/down_arrow.png" alt=""></button>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="content_header_level_btn">
+                                        <a class="dropdown-item" href="#">Tipo</a>
+                                        <a class="dropdown-item" href="#">Tiempo de preparación</a>
+                                        <a class="dropdown-item" href="#">Porciones</a>
+                                        <a class="dropdown-item" href="#">Dificultad</a>
+                                        <a class="dropdown-item" href="#">Todos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="video_container" class="container">
+                    <div class="row">
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_1.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Cena</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>30 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>10</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Intermedio</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_1');">
+                                                <img id="content_item_favorite_img_1" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">BARRAS DE PESCADO</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_2.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Desayuno</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>20 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>5</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Intermedio</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_2');">
+                                                <img id="content_item_favorite_img_2" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">SOCCA FRANCESA</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_3.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Cena</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>30 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>1</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Intermedio</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_3');">
+                                                <img id="content_item_favorite_img_3" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">HAMBURGUESA DE FRIJOL NEGRO</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_4.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Postre</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>35 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>8</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Principiante</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_4');">
+                                                <img id="content_item_favorite_img_4" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">CUPCAKE DE MORA Y NUECES</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_5.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Postre</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>35 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>4</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Avanzado</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_5');">
+                                                <img id="content_item_favorite_img_5" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">POSTRE DE FRUTOS ROJOS</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_6.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Almuerzo</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>45 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>4</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Avanzado</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_6');">
+                                                <img id="content_item_favorite_img_6" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">SALMÓN AL HORNO CON ENSALADA PRIMAVERA</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_7.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Postre</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>15 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>6</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Principiante</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_7');">
+                                                <img id="content_item_favorite_img_7" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">BATIDO DE AVENA Y FRUTOS ROJOS</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_8.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Almuerzo</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>10 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>5</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Principiante</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_8');">
+                                                <img id="content_item_favorite_img_8" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">ENSALADA DE BROCOLI</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_9.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Postre</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>15 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>6</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Principiante</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_9');">
+                                                <img id="content_item_favorite_img_9" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">ENSALADA DE AGUACATE Y MAIZ</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_10.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Almuerzo</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>10 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>8</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Principiante</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_10');">
+                                                <img id="content_item_favorite_img_10" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">PURÉ DE COLIFLOR</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_11.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Postre</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>45 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>10</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Avanzado</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_11');">
+                                                <img id="content_item_favorite_img_11" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">HELADO DE MORA AZUL</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="content_item" class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="content_item_info">
+                                        <img id="content_item_image" src="resources/images/video_al_6.png" alt="">
+                                        <div id="content_item_labels">
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tipo: </span>Almuerzo</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Tiempo: </span>15 Min</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Porciones: </span>6</p>
+                                            <p id="content_item_label_p"> <span id="content_item_label_span">Dificultad: </span>Intermedio</p>
+                                        </div>
+
+                                        <div id="content_item_favorite">
+                                            <a href="#" onclick="changeImage('resources/icons/favorites_on.png', 'content_item_favorite_img_12');">
+                                                <img id="content_item_favorite_img_12" class="item_favorite_img" src="resources/icons/favorites_off.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <h3 id="content_item_title">ENSALADA DE FRUTAS Y LECHE</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
